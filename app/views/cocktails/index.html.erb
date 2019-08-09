@@ -1,10 +1,10 @@
 <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://assets.afcdn.com/recipe/20180705/80288_w648h344c1cx1473cy1313cxt0cyt0cxb4493cyb3286.jpg);">
-  <div class="container">
-    <h1 class="navbar">Welcome to the Mixoteque</h1>
+  <div>
+    <h1>Welcome to the Mixoteque</h1>
     <%= link_to "Add a new Cocktail", new_cocktail_path(@cocktails), class:"btn btn-ghost" %>
   </div>
 </div>
-<div class="container">
+<div class="card-container">
   <% @cocktails.each do |cocktail| %>
     <div class="card-product">
       <img src="https://source.unsplash.com/featured/?cocktail">
